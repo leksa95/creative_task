@@ -1,0 +1,43 @@
+@media(min-width: 420px) {
+  body, html {
+    height: auto;
+  }
+  .wrapper {
+    img {
+      max-width: 100%;
+    }
+  }
+  .sliderAdvertising {
+    &_slide {
+      .price {
+        img {
+          max-width: 300px !important;
+        }
+      }
+    }
+
+    &_dots {
+      &__dot {
+        &.active {
+          &:before {
+            width: 55%;
+            height: 52%;
+            top: 51%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 420px) {
+  .preview img {
+    max-width: 50% !important;
+  }
+}
+
+@media(min-width: 767px) {
+  .preview img {
+    min-width: 40% !important;
+  }
+}
